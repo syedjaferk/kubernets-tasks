@@ -1,0 +1,30 @@
+Create a docker image
+run the docker image 
+
+minikube start
+
+https://minikube.sigs.k8s.io/docs/start/
+
+[09:52 PM]-[syedjafer@syedjafer]-[~/.../Projects/kubernets_task]-
+$ kubectl apply -f ku
+kubeEnv/  kube.yml  
+
+[09:52 PM]-[syedjafer@syedjafer]-[~/.../Projects/kubernets_task]-
+$ kubectl apply -f kube.yml 
+deployment.apps/first-deployment created
+
+[09:58 PM]-[syedjafer@syedjafer]-[~/.../Projects/kubernets_task]-
+$ kubectl get rs
+NAME                          DESIRED   CURRENT   READY   AGE
+first-deployment-779c9fbbdb   1         1         0       8s
+hello-node-ccf4b9788          1         1         1       16d
+
+[09:59 PM]-[syedjafer@syedjafer]-[~/.../Projects/kubernets_task]-
+$ 
+
+Good Tutorial: 
+===============
+https://minikube.sigs.k8s.io/docs/tutorials/kubernetes_101/module1/
+https://spacelift.io/blog/kubernetes-deployment-yaml
+https://release.com/blog/kubernetes-jobs-how-to-create-schedule-run-and-more-2
+
